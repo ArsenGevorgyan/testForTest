@@ -1,0 +1,60 @@
+ <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Main tests">
+    <listeners>
+        <listener class-name="utils.TestListener"/>
+    </listeners>
+    <test name="Sample">
+        <classes>
+        <class name="selectDiscountProductsTest.SelectDiscountProductsTest">
+            <methods>
+                <include name="setUp" />
+                <include name="homePageUITest" />
+                <include name="tearDown" />
+            </methods>
+        </class>
+            <class name="loginTests.LoginFailedTests">
+                <methods>
+                    <include name="setUp" />
+                    <include name="emptyFieldsLoggedInTest" />
+                    <include name="wrongEmailLoggedInTest" />
+                    <include name="wrongCredentialsLoggedInTest" />
+                    <include name="tearDown" />
+                </methods>
+            </class>
+            <class name="loginTests.LoginToApplicationTests">
+                <methods>
+                    <include name="setUp" />
+                    <include name="loggedInPageUITest" />
+                    <include name="successfullyLoggedInTest" />
+                    <include name="tearDown" />
+                </methods>
+            </class>
+            <class name="registrationTests.FailedRegistrationTests">
+                <methods>
+                    <include name="setUp" />
+                    <include name="emptyFieldsRegistrationTest" />
+                    <include name="shortPasswordDuringRegistrationTest" />
+                    <include name="notEqualPasswordDuringRegistrationTest" />
+                    <include name="longUserNameTest" />
+                    <include name="wrongEmailFormatTest" />
+                    <include name="tearDown" />
+                </methods>
+            </class>
+            <class name="registrationTests.RegistrationPageUITests">
+                <methods>
+                    <include name="setUp" />
+                    <include name="registrationUITest" />
+                    <include name="tearDown" />
+                </methods>
+            </class>
+            <class name="registrationTests.SuccessfulRegistrationTests">
+                <methods>
+                    <include name="setUp" />
+                    <include name="openTradingServerDetailsPage" />
+                    <include name="tearDown" />
+                </methods>
+            </class>
+        </classes>
+
+    </test>
+</suite>
