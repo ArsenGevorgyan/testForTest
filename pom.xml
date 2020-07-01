@@ -12,7 +12,7 @@
         <aspectj.version>1.8.10</aspectj.version>
         <selenium.java.version>3.11.0</selenium.java.version>
         <testng.version>6.14.3</testng.version>
-        <log4j.version>2.13.0</log4j.version>
+        <log4j.version>2.13.3</log4j.version>
         <maver.surfire.plugin.version>2.22.0</maver.surfire.plugin.version>
         <maven.clean.plugin.version>3.1.0</maven.clean.plugin.version>
         <maven.resoure.plugin.version>3.1.0</maven.resoure.plugin.version>
